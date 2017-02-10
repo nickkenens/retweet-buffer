@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TwitterService } from "./services/twitter/twitter.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app does work!';
+
+  constructor(private twitterService: TwitterService) {
+
+  }
 }
